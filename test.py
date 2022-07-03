@@ -25,6 +25,10 @@ def read_dataset(directory):
 
     pristine = [os.path.join(directory,'0' ,f) for f in os.listdir(os.path.join(directory,'0')) if os.path.isfile(os.path.join(directory,'0', f))]
     forged   = [os.path.join(directory,'1' ,f) for f in os.listdir(os.path.join(directory,'1')) if os.path.isfile(os.path.join(directory,'1', f))]
+    
+#     Using own data
+#     pristine = [os.path.join(directory,'pristine' ,f) for f in os.listdir(os.path.join(directory,'pristine')) if os.path.isfile(os.path.join(directory,'pristine', f))]
+#     forged   = [os.path.join(directory,'forged' ,f) for f in os.listdir(os.path.join(directory,'forged')) if os.path.isfile(os.path.join(directory,'forged', f))]
 
     paths.extend(pristine)
     paths.extend(forged)
